@@ -1,0 +1,3 @@
+case_id,case_name,source_type,expected_label,vulnerability_type,rationale,review_status,analyzer_name,analyzer_finding,notes
+TC001,Unrestricted owner change,controlled_test,Vulnerable,Missing access control,"Any caller can invoke changeOwner() and replace the owner.",Pending,,,, 
+TC002,Owner-only protected update,controlled_test,Protected,Access control present,"setProtectedValue() requires msg.sender to equal owner.",Pending,,,,
